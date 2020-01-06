@@ -1,0 +1,9 @@
+.content {
+  grid-area: c;
+  background-color: wheat;
+}
+
+.item {
+  background-color: greenyellow;
+  color: green;
+}
