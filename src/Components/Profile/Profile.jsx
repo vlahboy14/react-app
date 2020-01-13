@@ -4,7 +4,7 @@ import MyPosts from './MyPosts/MyPosts'
 
 const Profile = () => {
   return (
-    <div className={c.content}>
+    <div>
       <div>
         <img src="https://via.placeholder.com/100x50" />
       </div>

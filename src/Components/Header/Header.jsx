@@ -3,9 +3,9 @@ import c from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className={c.content}>
-      Header
-    </div>
+    <header className={c.header}>
+      <img src="https://www.freelogodesign.org/Content/img/logo-ex-7.png" />
+    </header>
   );
 };
 
