@@ -1,7 +1,12 @@
-.postsBlock{
-    padding: 10px;
+.postsBlock {
+  padding: 10px;
 }
 
-.posts{
-    margin-top: 10px;
+.posts {
+  margin-top: 10px;
+}
+
+.textarea {
+    min-width: 160px;
+    min-height: 50px;
 }

@@ -9,6 +9,11 @@
   text-decoration: none;
 }
 
+.item a:hover {
+  color: gold;
+  transition: .5s;
+}
+
 .item a.active {
   color: gold;
 }

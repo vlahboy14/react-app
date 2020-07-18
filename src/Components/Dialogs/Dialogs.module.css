@@ -3,21 +3,24 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.dialog{
+.user {
+
+}
+
+.user a {
+  padding: 20px;
   text-decoration: none;
+  color: rgb(61, 61, 61);
 }
 
-.dialogsItems {
+/* .user a.active {
+  color: rgb(41, 138, 228);
+} */
+/* 
+.dialogItems {
   padding: 10px;
-}
-
-.dialogsItems .active{
-    color: gold;
-  }
+} */
 
 .messages {
   padding: 10px;
-}
-
-.messages .message {
 }
