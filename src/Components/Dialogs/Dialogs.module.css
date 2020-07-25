@@ -3,10 +3,6 @@
   grid-template-columns: 2fr 10fr;
 }
 
-/* .user {
-  background-color: salmon;
-} */
-
 .user a {
   text-decoration: none;
   color: rgb(61, 61, 61);
@@ -20,8 +16,6 @@
 .user a.active {
   color: rgb(41, 138, 228);
 }
-
-
 
 .dialogItems {
   padding: 20px;

@@ -1,6 +1,8 @@
-.descriptionBlock{
+.descriptionBlock {
   padding: 10px;
 }
-img{
-  width: 100%;
+
+.natureImage {
+  width: 1000px;
+  height: 250px;
 }
