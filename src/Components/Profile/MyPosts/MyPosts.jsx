@@ -2,7 +2,7 @@ import React from "react";
 import c from "./MyPosts.module.css";
 import Post from "./Post/Post.jsx";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
   // let addPostButton = document.getElementsByClassName('.add_post');
   // let textArea = document.getElementsByClassName('.textarea');
@@ -11,13 +11,7 @@ const MyPosts = () => {
   //   textArea.value = null
   // });
 
-
-  let postData = [
-    { id: 1, message: "Hi, how are you?", likesCount: 12 },
-    { id: 2, message: "Hi, how are you?", likesCount: 10 },
-  ];
-
-  let postsElements = postData
+  let postsElements = props.postData
     .map(post => <Post message={post.message} likes={post.likesCount} />);
   
   return (
