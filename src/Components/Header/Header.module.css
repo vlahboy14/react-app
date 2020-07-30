@@ -1,16 +1,16 @@
 .header {
   grid-area: h;
-  background-color: rgb(201, 199, 129);
+  background-color: #1BA098;
+  background-image: url('./../../assets/images/header.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.header img {
-  width: 20px;
+.logo img {
+  width: 100%;
+  max-width: 50px;
 }
 
-.loginBlock {
-  float: right;
+.backgroundImg{
 
-}
-.loginBlock a {
-  color: white;
 }

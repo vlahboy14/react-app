@@ -1,19 +1,48 @@
 .nav {
   grid-area: n;
-  background-color: burlywood;
+  background-color: #051622;
   padding: 20px;
+  font-size: 16px;
+}
+
+.item {
+  margin-top: 5px;
 }
 
 .item a {
-  color: white;
+  color: #DEB992;
   text-decoration: none;
 }
 
 .item a:hover {
-  color: gold;
+  color: #1BA098;
   transition: .5s;
 }
 
 .item a.active {
-  color: gold;
+  color: #1BA098;
+}
+
+.friendsLink {
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+.friendsContainer {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.friendWrapper {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 11px;
+}
+
+.friendWrapper:first-child {
+  margin: 0;
+}
+
+.friendAvatar img {
+  border-radius: 50%;
 }

@@ -1,8 +1,25 @@
 .descriptionBlock {
-  padding: 10px;
+  padding: 20px;
+  display: flex;
 }
 
-.natureImage {
-  width: 1000px;
-  height: 250px;
+.ava {
+  max-width: 90px;
+  max-height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* Здесь творится лютейшая дичь 
+  Когда узнаешь как сделать лучше,
+  Сделай!!! */
+
+.ava img {
+  width: auto;
+  height: 100%;
+  margin-left: -40px;
+}
+
+.descriptionBlock div {
+  margin-left: 20px;
 }

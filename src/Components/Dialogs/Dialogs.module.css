@@ -3,24 +3,39 @@
   grid-template-columns: 2fr 10fr;
 }
 
+.user {
+  display: flex;
+  margin-top: 10px;
+}
+
 .user a {
   text-decoration: none;
-  color: rgb(61, 61, 61);
+  margin-left: 10px;
+  color: #DEB992;
 }
 
 .user a:hover {
-  color: rgb(41, 138, 228);
+  color: #1BA098;
   transition: .5s;
 }
 
 .user a.active {
-  color: rgb(41, 138, 228);
+  color: #1BA098;
 }
 
 .dialogItems {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
 .messages {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  border-radius: 50%;
 }

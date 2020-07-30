@@ -1,24 +1,43 @@
 import React from "react";
-import c from "./Navbar.module.css";
+import style from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+  let names = props.namesData.friends
+    .map(friendName =>
+      <div className={style.friendWrapper}>
+        <div className={style.friendAvatar}>
+          <img src="https://via.placeholder.com/50x50" alt='' />
+        </div>
+        <div className={style.text}>{friendName.name}</div>
+      </div>
+    );
+
   return (
-    <nav className={c.nav}>
-      <div className={c.item}>
-        <NavLink to="/profile" activeClassName={c.active}> Profile </NavLink>
+    <nav className={style.nav}>
+      <div className={style.item}>
+        <NavLink to="/profile" activeClassName={style.active}> Profile </NavLink>
       </div>
-      <div className={c.item}>
-        <NavLink to="/dialogs" activeClassName={c.active}> Messages </NavLink>
+      <div className={style.item}>
+        <NavLink to="/dialogs" activeClassName={style.active}> Messages </NavLink>
       </div>
-      <div className={c.item}>
-        <NavLink to="/news" activeClassName={c.active}> News </NavLink>
+      <div className={style.item}>
+        <NavLink to="/news" activeClassName={style.active}> News </NavLink>
       </div>
-      <div className={c.item}>
-        <NavLink to="/music" activeClassName={c.active}> Music </NavLink>
+      <div className={style.item}>
+        <NavLink to="/music" activeClassName={style.active}> Music </NavLink>
       </div>
-      <div className={c.item}>
-        <NavLink to="/settings" activeClassName={c.active}> Settings </NavLink>
+      <div className={style.item}>
+        <NavLink to="/settings" activeClassName={style.active}> Settings </NavLink>
+      </div>
+      <div className={style.item}>
+        <div className={style.friendsLink}>
+          <NavLink to="/friends" activeClassName={style.active}> Friends </NavLink>
+        </div>
+        <div className={style.friendsContainer} >
+          {names}
+        </div>
       </div>
     </nav>
   );

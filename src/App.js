@@ -4,26 +4,25 @@ import Header from "./Components/Header/Header";
 import Profile from "./Components/Profile/Profile";
 import Navbar from "./Components/Navbar/Navbar";
 import Dialogs from "./Components/Dialogs/Dialogs";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
+import Friends from "./Components/Friends/Friends";
 
 const App = (props) => {
+
   return (
-    <BrowserRouter>
-      <div className="app-wrapper">
-        <Header />
-        <Navbar />
-        <div className="app-wrapper-content">
-
-          <Route path="/dialogs" render={() =>
-            <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
-
-          <Route path="/profile" render={() => <Profile postData={props.postData} />} />
-          <Route path="/news" />
-          <Route path="/music" />
-          <Route path="/settings" />
-        </div>
+    <div className="app-wrapper">
+      <Header />
+      <Navbar namesData={props.state.sidebar.items} />
+      <div className="app-wrapper-content">
+        <Route path="/dialogs" render={() =>
+          <Dialogs dialogsPage={props.state.dialogsPage} />} />
+        <Route path="/profile" render={() => <Profile profilePage={props.state.profilePage} />} />
+        <Route path="/news" />
+        <Route path="/music" />
+        <Route path="/settings" />
+        <Route path="/friends" render={() => <Friends />} />
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 

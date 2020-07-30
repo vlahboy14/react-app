@@ -1,21 +1,28 @@
 body {
   margin: 0;
   padding: 0;
+  color: #DEB992;
+ 
 }
 
 .app-wrapper {
   width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-areas:
-    "h h"
-    "n c";
-
+  grid-template-areas: "h h" "n c";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
+  background-image: url('./assets/images/universe.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: -350% 50%;
+  background-color: #022422;
 }
 
 .app-wrapper-content {
   grid-area: c;
-  background-color: wheat;
+}
+
+.friendItem {
+  margin-left: 20px;
 }

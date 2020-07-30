@@ -1,7 +1,11 @@
-.item{
-color: brown;
+.item img {
+    width: 100%;
+    max-width: 50px;
+    height: 100%;
+    max-height: 50px;
+    border-radius: 50%;
 }
 
-.item img {
-    width: 50px;
+.item {
+    padding: 10px;
 }
