@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Post.module.css";
-import avatar from './../../../../assets/images/logo-og.png';
 
 const Post = props => {
   return (

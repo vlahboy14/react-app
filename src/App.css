@@ -12,11 +12,7 @@ body {
   grid-template-areas: "h h" "n c";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
-  background-image: url('./assets/images/universe.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: -350% 50%;
-  background-color: #022422;
+   background-color: #022422;
 }
 
 .app-wrapper-content {

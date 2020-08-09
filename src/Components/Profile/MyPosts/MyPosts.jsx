@@ -1,12 +1,17 @@
 import React from "react";
 import style from "./MyPosts.module.css";
 import Post from "./Post/Post.jsx";
-
+import {addPost} from './../../../redux/state'
 const MyPosts = (props) => {
 
   let postsElements = props.posts
     .map(post => <Post message={post.message} likes={post.likesCount} />);
-  
+
+  let sendMessage = () => {
+    let text = postMessage.current.value
+    addPost(text);
+  }
+
   return (
     <div className={style.postsBlock}>
       <h3> My Posts </h3>
@@ -14,7 +19,7 @@ const MyPosts = (props) => {
         <textarea className={style.textarea}></textarea>
       </div>
       <div>
-        <button className={style.add_post}>Add post</button>
+        <button className={style.add_post} onClick={sendMessage}>Add post</button>
       </div>
       <div className={style.posts}>
         {postsElements}
