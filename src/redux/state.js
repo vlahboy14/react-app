@@ -1,3 +1,4 @@
+import { rerenderDOM } from "../render";
 
 let state = {
 
@@ -49,6 +50,7 @@ export let addPost = (postMessage) => {
     likesCount: '12'
   }
   state.profilePage.posts.push(newPost);
+  rerenderDOM(state);
 }
 
 export default state;
